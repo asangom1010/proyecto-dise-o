@@ -1,0 +1,69 @@
+@charset "UTF-8";
+#carouselExampleCaptions {
+  max-height: 600px;
+  max-width: 1296px;
+  overflow: hidden;
+}
+#carouselExampleCaptions .carousel-indicators button {
+  background-color: #fff;
+}
+#carouselExampleCaptions .carousel-indicators button.active {
+  background-color: #007bff;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item img {
+  filter: brightness(0.8);
+  transition: transform 0.5s ease;
+  height: auto;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item.active img {
+  transform: scale(1.05);
+}
+#carouselExampleCaptions .carousel-inner .carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+#carouselExampleCaptions .carousel-inner .carousel-caption h5 {
+  color: #fff;
+}
+#carouselExampleCaptions .carousel-inner .carousel-caption p {
+  color: #ddd;
+}
+#carouselExampleCaptions .carousel-control-prev-icon,
+#carouselExampleCaptions .carousel-control-next-icon {
+  filter: invert(1);
+}
+#carouselExampleCaptions .carousel-control-prev:hover .carousel-control-prev-icon,
+#carouselExampleCaptions .carousel-control-prev:hover .carousel-control-next-icon,
+#carouselExampleCaptions .carousel-control-next:hover .carousel-control-prev-icon,
+#carouselExampleCaptions .carousel-control-next:hover .carousel-control-next-icon {
+  filter: invert(0.5);
+}
+
+.blur {
+  filter: blur(5px); /* Aplica un desenfoque de 5px */
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgb(2, 2, 2); /* Desenfoque de 4px con sombra negra */
+}
+
+.clicable img {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves */
+  cursor: pointer; /* Cambia el cursor a pointer para indicar que es clicable */
+  opacity: 0.9; /* Ligera opacidad */
+}
+
+.clicable img:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  opacity: 1; /* Restaura la opacidad */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Añade un sombreado */
+  border-color: black;
+  border-width: 2px;
+}/*# sourceMappingURL=custom.css.map */
