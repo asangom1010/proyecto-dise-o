@@ -3,43 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Club de Tiro con Arco Huelva</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="scss/custom.css">
- </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand"  href="#">Club de Tiro Huelva</a>
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/logo.png" alt="Logo del Club" width="40" height="40">
+                Club de Tiro Huelva
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Inicio</a>
+                        <a class="nav-link active" href="#"><i class="fas fa-home"></i> Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre Nosotros</a>
+                        <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#activities">Actividades</a>
+                        <a class="nav-link" href="#activities"><i class="fas fa-bullseye"></i> Actividades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
+                        <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="text-center text-white d-flex align-items-center justify-content-center " 
-    style="height: 70vh; background-image: url('imagenes/aire libre nacional.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-
+    <!-- Hero Section -->
+    <div class="text-center text-white d-flex align-items-center justify-content-center" style="height: 70vh; background-image: url('imagenes/aire libre nacional.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <div>
             <h1 class="display-4 text-shadow fw-bold">Club de Tiro con Arco Huelva</h1>
             <p class="lead text-shadow fw-bold">¡Apunta alto, dispara lejos, diviértete con nosotros!</p>
-            <a href="#about" class="btn btn-light btn-lg mt-3  fw-bold">Saber Más</a>
+            <a href="#about" class="btn btn-light btn-lg mt-3 fw-bold">
+                <i class="fas fa-arrow-circle-right"></i> Saber Más
+            </a>
         </div>
     </div>
 
@@ -51,25 +57,29 @@
             <div class="row text-center mt-4">
                 <div class="col-md-4">
                     <div class="p-4 border rounded">
-                        <h5>Entrenamientos</h5>
-                        <p>Entrenamientos para todas las edades y niveles.</p>
+                        <i class="fas fa-bullseye fa-2x text-danger"></i>
+                        <h5 class="mt-2">Entrenamientos</h5>
+                        <p>Clases programadas para todas las edades y niveles.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 border rounded">
-                        <h5>Competiciones</h5>
-                        <p>Participamos en torneos locales, autonomicos y nacionales.</p>
+                        <i class="fas fa-trophy fa-2x text-primary"></i>
+                        <h5 class="mt-2">Competiciones</h5>
+                        <p>Participamos en torneos locales, autonómicos y nacionales.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 border rounded">
-                        <h5>Comunidad</h5>
+                        <i class="fas fa-users fa-2x text-warning"></i>
+                        <h5 class="mt-2">Comunidad</h5>
                         <p>Un ambiente amistoso y colaborativo.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <!-- Actividades -->
     <section id="activities" class="bg-light py-5">
@@ -80,9 +90,9 @@
                     <div class="card">
                         <img src="imagenes/foto2.jpg" class="card-img-top" alt="Entrenamientos">
                         <div class="card-body">
-                            <h5 class="card-title">Clases de Tiro</h5>
+                            <h5 class="card-title"><i class="fas fa-person-chalkboard"></i> Clases de Tiro</h5>
                             <p class="card-text">Aprende las técnicas del tiro con arco con nuestros instructores certificados.</p>
-                            <a href="#" class="btn btn-success">Más Información</a>
+                            <a href="cursos.html" class="btn btn-success"><i class="fas fa-info-circle"></i> Más Información</a>
                         </div>
                     </div>
                 </div>
@@ -90,9 +100,9 @@
                     <div class="card">
                         <img src="imagenes/dianas.jpg" class="card-img-top" alt="Competencias">
                         <div class="card-body">
-                            <h5 class="card-title">Torneos</h5>
+                            <h5 class="card-title"><i class="fas fa-crosshairs"></i> Torneos</h5>
                             <p class="card-text">Compite con los mejores y demuestra tus habilidades.</p>
-                            <a href="#" class="btn btn-success">Ver Torneos</a>
+                            <a href="torneos.html" class="btn btn-success"><i class="fas fa-trophy"></i> Ver Torneos</a>
                         </div>
                     </div>
                 </div>
@@ -100,30 +110,7 @@
         </div>
     </section>
 
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contacto</h2>
-            <form>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="name" placeholder="Tu nombre">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="email" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="Tu correo">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
-                </div>
-                <button type="submit" class="btn btn-success">Enviar</button>
-            </form>
-        </div>
-    </section>
-
-    <div id="carouselExampleCaptions" class="carousel slide container d-flex justify-content-center align-items-center">
+   <div id="carouselExampleCaptions" class="carousel slide container d-flex justify-content-center align-items-center">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -169,30 +156,20 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-file-arrow-up-fill" viewBox="0 0 16 16">
-        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M7.5 6.707 6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0z"/>
-      </svg>
-    <footer class="bg-success text-white text-center py-3 navbar-dark bg-dark">
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
         <div class="container">
             <p class="mb-0">&copy; 2024 Club de Tiro con Arco Huelva. Todos los derechos reservados.</p>
             <div class="social-icons mt-3">
-                <a href="https://facebook.com" class="text-white me-3" target="_blank" aria-label="Facebook">
-                    <i class="bi bi-facebook fs-4"></i> <!-- Facebook icon -->
-                </a>
-                <a href="https://twitter.com" class="text-white me-3" target="_blank" aria-label="Twitter">
-                    <i class="bi bi-twitter fs-4"></i> <!-- Twitter icon -->
-                </a>
-                <a href="https://instagram.com" class="text-white me-3 " target="_blank" aria-label="Instagram">
-                    <i class="bi bi-instagram fs-4"></i> <!-- Instagram icon -->
-                </a>
-                <a href="https://youtube.com" class="text-white" target="_blank" aria-label="YouTube">
-                    <i class="bi bi-youtube fs-4"></i> <!-- YouTube icon -->
-                </a>
+                <a href="https://facebook.com" class="text-white me-3" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://twitter.com" class="text-white me-3" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://instagram.com" class="text-white me-3" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://youtube.com" class="text-white" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
             </div>
         </div>
     </footer>
-    
 
-<script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
