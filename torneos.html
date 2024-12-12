@@ -1,138 +1,207 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Torneos - Club de Tiro Huelva</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="scss/custom.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="scss/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Barra de navegación -->
-    <a href="#about"
-    class="visually-hidden-focusable">saltar barra de navegacion</a>
+    <a href="#about" class="visually-hidden-focusable"
+      >saltar barra de navegacion</a
+    >
     <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand nav-link" href="index.html">
-                <img src="imagenes/logo.png" alt="Logo del Club" width="40" height="40">
-                Club de Tiro Huelva
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cursos.html"><i class="fas fa-bullseye"></i> Curso de iniciación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="torneos.html"><i class="fas fa-trophy"></i> Competiciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="plusmarcas.html"><i class="fas fa-info-circle"></i> Plusmarcas</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand nav-link" href="index.html">
+          <img
+            src="imagenes/logo.png"
+            alt="Logo del Club"
+            width="40"
+            height="40"
+          />
+          Club de Tiro Huelva
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                ><i class="fas fa-home"></i> Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html"
+                ><i class="fas fa-envelope"></i> Contacto</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cursos.html"
+                ><i class="fas fa-bullseye"></i> Curso de iniciación</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="torneos.html"
+                ><i class="fas fa-trophy"></i> Competiciones</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="plusmarcas.html"
+                ><i class="fas fa-info-circle"></i> Plusmarcas</a
+              >
+            </li>
+            <li class="nav-item">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Encabezado -->
-    <header class="text-center text-white d-flex align-items-center justify-content-center"
-            style="height: 50vh; background-image: url('imagenes/torneobanner2.jpg'); background-size: cover; background-position: center;">
-        <div>
-            <h1 class="display-4 text-shadow fw-bold">Competiciones de Tiro con Arco</h1>
-            <p class="lead text-shadow fw-bold">Explora los próximos eventos y participa en la acción</p>
-        </div>
+    <header
+      class="text-center text-white d-flex align-items-center justify-content-center"
+      style="
+        height: 50vh;
+        background-image: url('imagenes/torneobanner2.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div>
+        <h1 class="display-4 text-shadow fw-bold">
+          Competiciones de Tiro con Arco
+        </h1>
+        <p class="lead text-shadow fw-bold">
+          Explora los próximos eventos y participa en la acción
+        </p>
+      </div>
     </header>
 
     <!-- Sección de Torneos -->
     <main class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Competiciones</h2>
-            <div class="row">
-                <!-- Próximas Competiciones -->
-                <div class="col-md-6">
-                    <h3 class="mb-3">Próximas Competiciones</h3>
-                    <ul class="list-group">
-                        <!-- Competición 1 -->
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h5 class="mb-1">Campeonato de Andalucia</h5>
-                                    <p class="mb-1">Fecha: 12 de marzo de 2024</p>
-                                    <p class="mb-1">Lugar: Polideportivo Municipal, Huelva</p>
-                                </div>
-                                <a href="inscripcionAndalucia.html" class="btn btn-success btn-sm" aria-label="Inscribirse en Copa Regional 2024">Inscribirse</a>
-                            </div>
-                        </li>
-                        <!-- Competición 2 -->
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h5 class="mb-1">Campeonato Nacional</h5>
-                                    <p class="mb-1">Fecha: 25 de abril de 2024</p>
-                                    <p class="mb-1">Lugar: Estadio Nacional de Tiro, Sevilla</p>
-                                </div>
-                                <a href="inscripcionNacional.html" class="btn btn-success btn-sm" aria-label="Inscribirse en Campeonato Nacional">Inscribirse</a>
-                            </div>
-                        </li>
-                    </ul>
+      <div class="container">
+        <h2 class="text-center mb-4">Competiciones</h2>
+        <div class="row">
+          <!-- Próximas Competiciones -->
+          <div class="col-md-6">
+            <h3 class="mb-3">Próximas Competiciones</h3>
+            <ul class="list-group">
+              <!-- Competición 1 -->
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1">Campeonato de Andalucia</h5>
+                    <p class="mb-1">Fecha: 12 de marzo de 2024</p>
+                    <p class="mb-1">Lugar: Polideportivo Municipal, Huelva</p>
+                  </div>
+                  <a
+                    href="inscripcionAndalucia.html"
+                    class="btn btn-success btn-sm"
+                    aria-label="Inscribirse en Copa Regional 2024"
+                    >Inscribirse</a
+                  >
                 </div>
+              </li>
+              <!-- Competición 2 -->
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1">Campeonato Nacional</h5>
+                    <p class="mb-1">Fecha: 25 de abril de 2024</p>
+                    <p class="mb-1">Lugar: Estadio Nacional de Tiro, Sevilla</p>
+                  </div>
+                  <a
+                    href="inscripcionNacional.html"
+                    class="btn btn-success btn-sm"
+                    aria-label="Inscribirse en Campeonato Nacional"
+                    >Inscribirse</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
 
-                <!-- Torneos Finalizados -->
-                <div class="col-md-6">
-                    <h3 class="mb-3">Torneos Finalizados</h3>
-                    <ul class="list-group">
-                        <!-- Torneo 1 -->
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h5 class="mb-1">Campeonato Provincial</h5>
-                                    <p class="mb-1">Fecha: 5 de diciembre de 2023</p>
-                                    <p class="mb-1">Lugar: Polideportivo San Pedro, Huelva</p>
-                                </div>
-                                <a href="#" class="btn btn-secondary btn-sm" aria-label="Ver más información sobre Campeonato Provincial">Ver más</a>
-                            </div>
-                        </li>
-                        <!-- Torneo 2 -->
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h5 class="mb-1">Campeonato de españa</h5>
-                                    <p class="mb-1">Fecha: 15 de noviembre de 2023</p>
-                                    <p class="mb-1">Lugar: Universidad computense, Madrid</p>
-                                </div>
-                                <a href="#" class="btn btn-secondary btn-sm" aria-label="Ver más información sobre Torneo Internacional">Ver más</a>
-                            </div>
-                        </li>
-                    </ul>
+          <!-- Torneos Finalizados -->
+          <div class="col-md-6">
+            <h3 class="mb-3">Torneos Finalizados</h3>
+            <ul class="list-group">
+              <!-- Torneo 1 -->
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1">Campeonato Provincial</h5>
+                    <p class="mb-1">Fecha: 5 de diciembre de 2023</p>
+                    <p class="mb-1">Lugar: Polideportivo San Pedro, Huelva</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-secondary btn-sm"
+                    aria-label="Ver más información sobre Campeonato Provincial"
+                    >Ver más</a
+                  >
                 </div>
-            </div>
+              </li>
+              <!-- Torneo 2 -->
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1">Campeonato de españa</h5>
+                    <p class="mb-1">Fecha: 15 de noviembre de 2023</p>
+                    <p class="mb-1">Lugar: Universidad computense, Madrid</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-secondary btn-sm"
+                    aria-label="Ver más información sobre Torneo Internacional"
+                    >Ver más</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p class="mb-0">&copy; 2024 Club de Tiro con Arco Huelva. Todos los derechos reservados.</p>
-        </div>
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2024 Club de Tiro con Arco Huelva. Todos los derechos
+          reservados.
+        </p>
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <button class="btn btn-success back-to-top " id="backToTop"
-    title="Volver arriba">
-    ↑
-</button>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
-</body>
+    <button
+      class="btn btn-success back-to-top"
+      id="backToTop"
+      title="Volver arriba"
+    >
+      ↑
+    </button>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
