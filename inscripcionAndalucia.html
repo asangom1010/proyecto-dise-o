@@ -56,68 +56,76 @@
     <!-- Formulario de inscripción -->
     <main class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Formulario de Inscripción</h2>
+            <h2 class="text-center mb-5">Formulario de Inscripción</h2>
             <form id="inscriptionForm">
-                <!-- Datos personales -->
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                <!-- Fila 1: Nombre y Apellido -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="surname" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="surname" placeholder="Tu apellido" required>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="surname" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="surname" placeholder="Tu apellido" required>
+                <!-- Fila 2: Correo y Teléfono -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Tu correo" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Tu número" pattern="[0-9]{9}" required>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" placeholder="Tu correo" required>
+                <!-- Fila 3: Categoría y Modalidad -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="categoria" class="form-label">Categoría</label>
+                        <select class="form-select" id="categoria" required>
+                            <option value="">Selecciona tu categoría</option>
+                            <option value="Ardilla">Ardilla</option>
+                            <option value="Benjamin">Benjamin</option>
+                            <option value="Alevin">Alevin</option>
+                            <option value="Infantil">Infantil</option>
+                            <option value="Cadete">Cadete</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Senior">Senior</option>
+                            <option value="Plus 50">Plus 50</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="modalidad" class="form-label">Modalidad</label>
+                        <select class="form-select" id="modalidad" required>
+                            <option value="">Selecciona tu modalidad</option>
+                            <option value="Recurvo">Recurvo</option>
+                            <option value="Compuesto">Compuesto</option>
+                            <option value="Tradicional">Tradicional</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Número de Teléfono</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="Tu número de teléfono" pattern="[0-9]{9}" required>
+                <!-- Fila 4: Método de Pago -->
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <h3 class="mb-3">Método de Pago</h3>
+                        <div class="d-flex align-items-center">
+                            <input type="radio" class="form-check-input me-2" name="paymentMethod" id="visa" value="Visa" required>
+                            <label for="visa" class="form-check-label me-4">Visa (25 €)</label>
+                            <input type="radio" class="form-check-input me-2" name="paymentMethod" id="paypal" value="PayPal" required>
+                            <label for="paypal" class="form-check-label">PayPal (25 €)</label>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Categoría -->
-                <div class="mb-3">
-                    <label for="categoria" class="form-label">Categoría</label>
-                    <select class="form-select" id="categoria" required>
-                        <option value="">Selecciona tu categoría</option>
-                        <option value="Ardilla">Ardilla</option>
-                        <option value="Benjamin">Benjamin</option>
-                        <option value="Alevin">Alevin</option>
-                        <option value="Infantil">Infantil</option>
-                        <option value="Cadete">Cadete</option>
-                        <option value="Junior">Junior</option>
-                        <option value="Senior">Senior</option>
-                        <option value="Plus 50">Plus 50</option>
-                    </select>
+                <!-- Botón de Inscripción -->
+                <div class="text-center">
+                    <button type="button" class="btn btn-success btn-lg" id="payButton">Inscribirse y Pagar</button>
                 </div>
-
-                <div class="mb-3">
-                    <label for="modalidad" class="form-label">Modalidad</label>
-                    <select class="form-select" id="modalidad" required>
-                        <option value="">Selecciona tu modalidad</option>
-                        <option value="Recuvo">Recuvo</option>
-                        <option value="Compuesto">Compuesto</option>
-                        <option value="Tradicional">Tradicional</option>
-                    </select>
-                </div>
-
-                <!-- Pago -->
-                <h3 class="mb-3">Método de Pago</h3>
-                <div class="d-flex align-items-center mb-3">
-                    <input type="radio" class="form-check-input me-2" name="paymentMethod" id="visa" value="Visa" required>
-                    <label for="visa" class="form-check-label me-4">Visa 25 €)</label>
-                    <input type="radio" class="form-check-input me-2" name="paymentMethod" id="paypal" value="PayPal" required>
-                    <label for="paypal" class="form-check-label">PayPal (25 €)</label>
-                </div>
-
-                <!-- Botón de inscripción -->
-                <button type="button" class="btn btn-success btn-lg w-100" id="payButton">
-                    Inscribirse y Pagar
-                </button>
             </form>
         </div>
     </main>
+    
 
     <!-- Modal de Pago para Visa -->
     <div class="modal fade" id="visaModal" tabindex="-1" aria-labelledby="visaModalLabel" aria-hidden="true">
@@ -171,12 +179,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p class="mb-0">&copy; 2024 Club de Tiro con Arco Huelva. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+
 
     <!-- Scripts -->
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -207,5 +210,78 @@
     </button>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <!-- Redes Sociales -->
+            <div class="d-flex justify-content-center mb-4">
+                <a href="https://facebook.com" class="text-white mx-3"
+                    target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://twitter.com" class="text-white mx-3"
+                    target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://instagram.com" class="text-white mx-3"
+                    target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://youtube.com" class="text-white mx-3"
+                    target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube fa-2x"></i>
+                </a>
+            </div>
+
+            <!-- Enlaces útiles -->
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html"
+                                class="text-white">Inicio</a></li>
+                        <li><a href="cursos.html"
+                                class="text-white">Cursos</a></li>
+                        <li><a href="torneos.html"
+                                class="text-white">Competiciones</a></li>
+                        <li><a href="plusmarcas.html"
+                                class="text-white">Plusmarcas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Contacto</h5>
+                    <p class="mb-0">
+                        <i class="fas fa-envelope"></i> <a
+                            href="mailto:info@clubtirohuelva.com"
+                            class="text-white">info@clubtirohuelva.com</a>
+                    </p>
+                    <p class="mb-0">
+                        <i class="fas fa-phone"></i> <a
+                            href="tel:+34959876543" class="text-white">+34 959 876 543</a>
+                    </p>
+                    <p class="mb-0">
+                        <i class="fas fa-map-marker-alt"></i> Huelva, España
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Horario</h5>
+                    <p class="mb-0">Lunes - Viernes: 9:00 AM - 7:00 PM</p>
+                    <p class="mb-0">Sábados: 10:00 AM - 2:00 PM</p>
+                    <p class="mb-0">Domingos: Cerrado</p>
+                </div>
+            </div>
+
+            <!-- Derechos reservados -->
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2024 Club de Tiro con Arco Huelva.
+                    Todos los derechos reservados.</p>
+            </div>
+        </div>
+
+        <!-- Botón de "Volver arriba" -->
+        <button class="btn btn-success back-to-top" id="backToTop"
+            title="Volver arriba" aria-label="Volver arriba">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
 </body>
 </html>
