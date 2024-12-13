@@ -11,6 +11,8 @@
     </head>
     <body>
        <!-- Navbar -->
+       <a href="#about"
+       class="visually-hidden-focusable">saltar barra de navegacion</a>
 <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand nav-link" href="index.html">
@@ -41,14 +43,14 @@
                 <li class="nav-item">
                     <a class="nav-link"
                         href="https://asangom1010-github-io.translate.goog/proyecto-dise-o/index.html?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp">
-                        <i class="fas fa-globe"></i> Traducir</a> 
+                        <i class="fas fa-info-circle"></i> Traducir</a>
                 </li>
             </ul>
-            <!-- Buscador -->
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+          <!-- Buscador -->
+          <form class="d-flex" role="search" id="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
         </div>
     </div>
 </nav>
@@ -296,6 +298,7 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         </script>
-
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="script.js"></script>
     </body>
 </html>
